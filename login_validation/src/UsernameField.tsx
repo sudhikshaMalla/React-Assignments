@@ -1,3 +1,8 @@
+import { Typography } from "@material-ui/core";
+import Input from "@material-ui/core/Input";
+
+const ariaLabel = { "aria-label": "description" };
+
 type UsernameFieldProps = {
   value: string;
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -6,9 +11,12 @@ type UsernameFieldProps = {
 export const UsernameField = (props: UsernameFieldProps) => {
   return (
     <div>
-      Enter your Username:
-      <br></br>
-      <input type="text" value={props.value} onChange={props.handleChange} />
+      <Typography variant="h6">Enter your Username:</Typography>
+      <Input
+        placeholder="Username"
+        inputProps={ariaLabel}
+        onChange={props.handleChange}
+      />
     </div>
   );
 };

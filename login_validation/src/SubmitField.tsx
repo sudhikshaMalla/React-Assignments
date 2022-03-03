@@ -1,3 +1,5 @@
+import Button from "@material-ui/core/Button";
+
 type SubmitFieldProps = {
   handleClick: () => void;
 };
@@ -5,7 +7,9 @@ type SubmitFieldProps = {
 export const SubmitField = (props: SubmitFieldProps) => {
   return (
     <div>
-      <input type="submit" value="Submit" onClick={props.handleClick} />
+      <Button variant="contained" color="primary" onClick={props.handleClick}>
+        Submit
+      </Button>
     </div>
   );
 };

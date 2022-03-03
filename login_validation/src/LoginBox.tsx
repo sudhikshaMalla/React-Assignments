@@ -1,3 +1,4 @@
+import { Container } from "@material-ui/core";
 import React from "react";
 import { PasswordField } from "./PasswordField";
 import { SubmitField } from "./SubmitField";
@@ -72,7 +73,7 @@ export class LoginBox extends React.Component<LoginBoxProps, StateProps> {
     const username = this.state.input_username;
     const password = this.state.input_password;
     return (
-      <div>
+      <Container maxWidth="sm">
         <h2>LOGIN</h2>
         <UsernameField
           value={username}
@@ -88,7 +89,7 @@ export class LoginBox extends React.Component<LoginBoxProps, StateProps> {
         <p>
           <i>{this.state.message}</i>
         </p>
-      </div>
+      </Container>
     );
   }
 }

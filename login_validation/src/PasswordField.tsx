@@ -1,4 +1,7 @@
+import { Typography } from "@material-ui/core";
+import Input from "@material-ui/core/Input";
 import { ReactEventHandler } from "react";
+const ariaLabel = { "aria-label": "description" };
 
 type PasswordFieldProps = {
   value: string;
@@ -8,12 +11,12 @@ type PasswordFieldProps = {
 export const PasswordField = (props: PasswordFieldProps) => {
   return (
     <div>
-      Enter your Password:
-      <br></br>
-      <input
-        type="password"
-        value={props.value}
+      <Typography variant="h6">Enter your Password:</Typography>
+      <Input
+        placeholder="Password"
+        inputProps={ariaLabel}
         onChange={props.handleChange}
+        type="password"
       />
     </div>
   );
