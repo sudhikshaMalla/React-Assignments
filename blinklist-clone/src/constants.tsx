@@ -6,4 +6,6 @@ export const COLORS = {
   MINT_CREAM: "#F1F6F4",
   GREY: "#6D787E",
   BRIGHT_BLUE: "#0365F2",
+  SHADOW_GREY: "#DFE8F6",
+  GRAY: "#E1ECFC",
 };
