@@ -1,5 +1,6 @@
 export const COLORS = {
-  WHITE: "#FDFAFA",
+  CREAM: "#E5E5E5",
+  WHITE: "#FFFFFF",
   SKYBLUE: "#69A6E3",
   DARK_GREY: "#042330",
   DARK_BLUE: "#03314B",
@@ -8,4 +9,6 @@ export const COLORS = {
   BRIGHT_BLUE: "#0365F2",
   SHADOW_GREY: "#DFE8F6",
   GRAY: "#E1ECFC",
+  GREEN: "#22C870",
+  BRIGHT_GREEN: "#2CE080",
 };

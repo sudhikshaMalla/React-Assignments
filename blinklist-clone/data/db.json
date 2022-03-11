@@ -1,18 +1,72 @@
 {
   "books": [
     {
-      "id": 3,
-      "title": "Doesn’t Hurt to Ask",
-      "author": "Trey Gowdy",
+      "id": 1,
+      "title": "Bring Your Human to Work",
+      "author": "Erica Keswin",
       "time": 13,
       "reads": "1.9k",
-      "status": "pending",
+      "status": "finished",
       "trending": false,
       "latest": false,
       "audio": true
     },
     {
-      "id": 7,
+      "id": 2,
+      "title": "Employee to Entrepreneur",
+      "author": "Steve Glaveski",
+      "time": 15,
+      "reads": "",
+      "status": "finished",
+      "trending": true,
+      "latest": false,
+      "audio": false
+    },
+    {
+      "id": 3,
+      "title": "Doesn’t Hurt to Ask",
+      "author": "Trey Gowdy",
+      "time": 13,
+      "reads": "1.9k",
+      "status": "finished",
+      "trending": false,
+      "latest": false,
+      "audio": true
+    },
+    {
+      "id": 4,
+      "title": "The Fate of Food",
+      "author": "Amanda Little",
+      "time": 12,
+      "reads": "16k",
+      "status": "finished",
+      "trending": true,
+      "latest": false,
+      "audio": false
+    },
+    {
+      "id": 5,
+      "title": "Lives of the Stoics",
+      "author": "Ryan Holiday, Stephen Hansel",
+      "time": 13,
+      "reads": "",
+      "status": "reading",
+      "trending": true,
+      "latest": false,
+      "audio": false
+    },
+    {
+      "id": 6,
+      "title": "Loving Your Business",
+      "author": "Debbie King",
+      "time": 13,
+      "reads": "",
+      "status": "pending",
+      "trending": true,
+      "latest": false,
+      "audio": false
+    },
+    {
       "title": "The Lonely Century",
       "author": "Noreena Hertz",
       "time": 15,
@@ -20,18 +74,19 @@
       "status": "pending",
       "trending": false,
       "latest": true,
-      "audio": false
+      "audio": false,
+      "id": 7
     },
     {
-      "id": 8,
       "title": "Eat Better, Feel Better",
       "author": "Giada De Laurentiis",
       "time": 13,
       "reads": "1.9k",
-      "status": "pending",
+      "status": "finished",
       "trending": false,
       "latest": true,
-      "audio": false
+      "audio": false,
+      "id": 8
     },
     {
       "id": 9,
@@ -43,17 +98,6 @@
       "trending": false,
       "latest": true,
       "audio": false
-    },
-    {
-      "id": 1,
-      "title": "Bring Your Human to Work",
-      "author": "Erica Keswin",
-      "time": 13,
-      "reads": "1.9k",
-      "status": "pending",
-      "trending": false,
-      "latest": false,
-      "audio": true
     },
     {
       "id": 10,
@@ -76,50 +120,6 @@
       "trending": true,
       "latest": false,
       "audio": true
-    },
-    {
-      "id": 5,
-      "title": "Lives of the Stoics",
-      "author": "Ryan Holiday, Stephen Hansel",
-      "time": 13,
-      "reads": "",
-      "status": "pending",
-      "trending": true,
-      "latest": false,
-      "audio": false
-    },
-    {
-      "id": 2,
-      "title": "Employee to Entrepreneur",
-      "author": "Steve Glaveski",
-      "time": 15,
-      "reads": "",
-      "status": "pending",
-      "trending": true,
-      "latest": false,
-      "audio": false
-    },
-    {
-      "id": 6,
-      "title": "Loving Your Business",
-      "author": "Debbie King",
-      "time": 13,
-      "reads": "",
-      "status": "pending",
-      "trending": true,
-      "latest": false,
-      "audio": false
-    },
-    {
-      "id": 4,
-      "title": "The Fate of Food",
-      "author": "Amanda Little",
-      "time": 12,
-      "reads": "16k",
-      "status": "pending",
-      "trending": true,
-      "latest": false,
-      "audio": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 import "./App.css";
-import Body from "./components/organisms/Body";
-import Footer from "./components/organisms/Footer";
-import Header from "./components/organisms/Header";
+import Body from "./components/organisms/Body/Body";
+import Footer from "./components/organisms/Footer/Footer";
+import Header from "./components/organisms/Header/Header";
 
 function App() {
   return (

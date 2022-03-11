@@ -1,0 +1,7 @@
+.ProgressComplete {
+  height: 12px;
+  width: 330px;
+  background-color: #e1ecfc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

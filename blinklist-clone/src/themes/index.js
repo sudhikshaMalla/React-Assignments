@@ -80,6 +80,15 @@ export const BannerTheme = createTheme({
 
 export const BodyTheme = createTheme({
   typography: {
+    h1: {
+      fontFamily: "Sans Serif",
+      fontSize: "36px",
+      fontStyle: "normal",
+      fontWeight: "700",
+      lineHeight: "45px",
+      letterSpacing: "0em",
+      textAlign: "left",
+    },
     h3: {
       fontFamily: "Sans Serif",
       fontSize: "24px",
