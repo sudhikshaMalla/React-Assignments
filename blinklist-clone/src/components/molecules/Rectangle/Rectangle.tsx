@@ -9,6 +9,7 @@ import ProgressZero from "../../atoms/ProgressZero/ProgressZero";
 
 type RectangleProps = {
   val: booktype;
+  className: string;
 };
 
 type booktype = {
@@ -42,7 +43,7 @@ export default function Rectangle(props: RectangleProps) {
         sx={{ width: "330px" }}
       >
         <Finished val={props.val} />
-        <ProgressInComplete />
+        <ProgressInComplete className="ProgressInComplete" />
       </Stack>
     );
   }

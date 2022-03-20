@@ -107,6 +107,24 @@ export const BodyTheme = createTheme({
       letterSpacing: "0em",
       textAlign: "left",
     },
+    body1: {
+      fontFamily: "Sans Serif",
+      fontSize: "16px",
+      fontStyle: "normal",
+      fontWeight: "500",
+      lineHeight: "20px",
+      letterSpacing: "0em",
+      textAlign: "left",
+    },
+    body2: {
+      fontFamily: "Sans Serif",
+      fontSize: "16px",
+      fontStyle: "normal",
+      fontWeight: "400",
+      lineHeight: "20px",
+      letterSpacing: "0em",
+      textAlign: "left",
+    },
   },
 });
 

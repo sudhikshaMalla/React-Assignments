@@ -5,13 +5,18 @@ import ExploreMenu from "../ExploreMenu/ExploreMenu";
 import logo from "../../../resources/logo.png";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
+import { ReactEventHandler } from "react";
 
-export default function NavMenu() {
+type NavMenuProps = {
+  clickHandler: ReactEventHandler;
+};
+
+export default function NavMenu(props: NavMenuProps) {
   return (
     <Stack direction="row" alignItems="center" spacing={5}>
       <img src={logo} alt="blinklist_logo" height="26px" width="124.09px" />
       <Search />
-      <ExploreMenu />
+      <ExploreMenu clickHandler={props.clickHandler} />
       <Link to="/" style={{ textDecoration: "none" }}>
         <NavText text="My Library" className="NavText" />
       </Link>

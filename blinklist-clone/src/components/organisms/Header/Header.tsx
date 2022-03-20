@@ -1,9 +1,14 @@
 import Stack from "@mui/material/Stack";
+import { ReactEventHandler } from "react";
 import { COLORS } from "../../../constants";
 import AccountMenu from "../../molecules/AccountMenu/AccountMenu";
 import NavMenu from "../../molecules/NavMenu/NavMenu";
 
-export default function Header() {
+type HeaderProps = {
+  clickHandler: ReactEventHandler;
+};
+
+export default function Header(props: HeaderProps) {
   return (
     <Stack
       direction="row"
@@ -17,7 +22,7 @@ export default function Header() {
         bgcolor: COLORS.WHITE,
       }}
     >
-      <NavMenu />
+      <NavMenu clickHandler={props.clickHandler} />
       <AccountMenu />
     </Stack>
   );

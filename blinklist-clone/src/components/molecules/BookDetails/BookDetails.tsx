@@ -2,6 +2,7 @@ import Stack from "@mui/material/Stack";
 import BookText from "../BookText/BookText";
 import { COLORS } from "../../../constants";
 import Rectangle from "../Rectangle/Rectangle";
+import "./BookDetails.css";
 
 type BookDetailsProps = {
   val: booktype;
@@ -28,7 +29,7 @@ export default function BookDetails(props: BookDetailsProps) {
         time={props.val.time}
         reads={props.val.reads}
       />
-      <Rectangle val={props.val} />
+      <Rectangle className="Rectangle" val={props.val} />
     </Stack>
   );
 }

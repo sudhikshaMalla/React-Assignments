@@ -48,7 +48,7 @@ export default function BooksGrid(props: BooksGridProps) {
             (props.property === "read" && book.status === "finished")
           ) {
             return (
-              <Grid item>
+              <Grid key={book.id} item>
                 <BookCard val={book} />
               </Grid>
             );

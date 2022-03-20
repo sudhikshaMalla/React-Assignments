@@ -1,9 +1,14 @@
 import Stack from "@mui/material/Stack";
+import { ReactEventHandler } from "react";
 import { COLORS } from "../../../constants";
 import Dropdown from "../../atoms/DropdownIcon/DropdownIcon";
 import NavText from "../NavText/NavText";
 
-export default function ExploreMenu() {
+type ExploreMenuProps = {
+  clickHandler: ReactEventHandler;
+};
+
+export default function ExploreMenu(props: ExploreMenuProps) {
   return (
     <Stack
       direction="row"
@@ -13,6 +18,7 @@ export default function ExploreMenu() {
           borderBottom: "2px solid " + COLORS.BRIGHT_GREEN,
         },
       }}
+      onClick={props.clickHandler}
     >
       <NavText text="Explore" />
       <Dropdown />

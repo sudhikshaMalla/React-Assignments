@@ -6,7 +6,7 @@
       "author": "Erica Keswin",
       "time": 13,
       "reads": "1.9k",
-      "status": "finished",
+      "status": "pending",
       "trending": false,
       "latest": false,
       "audio": true
@@ -28,7 +28,7 @@
       "author": "Trey Gowdy",
       "time": 13,
       "reads": "1.9k",
-      "status": "finished",
+      "status": "pending",
       "trending": false,
       "latest": false,
       "audio": true
@@ -50,7 +50,7 @@
       "author": "Ryan Holiday, Stephen Hansel",
       "time": 13,
       "reads": "",
-      "status": "reading",
+      "status": "finished",
       "trending": true,
       "latest": false,
       "audio": false
@@ -61,7 +61,7 @@
       "author": "Debbie King",
       "time": 13,
       "reads": "",
-      "status": "pending",
+      "status": "finished",
       "trending": true,
       "latest": false,
       "audio": false
@@ -71,7 +71,7 @@
       "author": "Noreena Hertz",
       "time": 15,
       "reads": "",
-      "status": "pending",
+      "status": "finished",
       "trending": false,
       "latest": true,
       "audio": false,
@@ -94,7 +94,7 @@
       "author": "James Moore",
       "time": 12,
       "reads": "",
-      "status": "pending",
+      "status": "finished",
       "trending": false,
       "latest": true,
       "audio": false
@@ -105,7 +105,7 @@
       "author": "Kathleen Shannon and Emily...",
       "time": 13,
       "reads": "",
-      "status": "pending",
+      "status": "finished",
       "trending": true,
       "latest": false,
       "audio": false
@@ -116,7 +116,7 @@
       "author": "Jim Collins & Bill Lazier",
       "time": 13,
       "reads": "1.9k",
-      "status": "pending",
+      "status": "finished",
       "trending": true,
       "latest": false,
       "audio": true
