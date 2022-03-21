@@ -7,7 +7,7 @@ export default function Nature() {
   return (
     <Stack direction="row" spacing={1}>
       <SpaOutlinedIcon className="NatureIcon" />
-      <BodySubtitle text="Nature & Environment" />
+      <BodySubtitle text="Nature & Environment" className="Nature" />
     </Stack>
   );
 }

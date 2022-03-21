@@ -7,7 +7,7 @@ export default function Marketing() {
   return (
     <Stack direction="row" spacing={1}>
       <TimelineOutlinedIcon className="MarketingIcon" />
-      <BodySubtitle text="Marketing & Sales" />
+      <BodySubtitle text="Marketing & Sales" className="Marketing" />
     </Stack>
   );
 }

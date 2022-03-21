@@ -7,7 +7,7 @@ export default function Money() {
   return (
     <Stack direction="row" spacing={1}>
       <AccountBalanceWalletOutlinedIcon className="MoneyIcon" />
-      <BodySubtitle text="Money & Investments" />
+      <BodySubtitle text="Money & Investments" className="Money" />
     </Stack>
   );
 }

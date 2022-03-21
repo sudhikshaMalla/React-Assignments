@@ -2,7 +2,6 @@ import Stack from "@mui/material/Stack";
 import BookText from "../BookText/BookText";
 import { COLORS } from "../../../constants";
 import Rectangle from "../Rectangle/Rectangle";
-import "./BookDetails.css";
 
 type BookDetailsProps = {
   val: booktype;

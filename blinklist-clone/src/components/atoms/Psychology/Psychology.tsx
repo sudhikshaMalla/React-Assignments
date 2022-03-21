@@ -7,7 +7,7 @@ export default function Entrepreneurship() {
   return (
     <Stack direction="row" spacing={1}>
       <PsychologyOutlinedIcon className="PsychologyIcon" />
-      <BodySubtitle text="Psychology" />
+      <BodySubtitle text="Psychology" className="Psychology" />
     </Stack>
   );
 }

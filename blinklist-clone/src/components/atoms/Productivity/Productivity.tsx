@@ -7,7 +7,7 @@ export default function Entrepreneurship() {
   return (
     <Stack direction="row" spacing={1}>
       <TimerOutlinedIcon className="ProductivityIcon" />
-      <BodySubtitle text="Productivity" />
+      <BodySubtitle text="Productivity" className="Productivity" />
     </Stack>
   );
 }

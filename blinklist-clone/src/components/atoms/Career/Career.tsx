@@ -7,7 +7,7 @@ export default function Career() {
   return (
     <Stack direction="row" spacing={1}>
       <TrackChangesOutlinedIcon className="CareerIcon" />
-      <BodySubtitle text="Career & Success" />
+      <BodySubtitle text="Career & Success" className="Career" />
     </Stack>
   );
 }

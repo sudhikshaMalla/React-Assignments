@@ -7,7 +7,7 @@ export default function Entrepreneurship() {
   return (
     <Stack direction="row" spacing={1}>
       <ConnectWithoutContactOutlinedIcon className="CommunicationIcon" />
-      <BodySubtitle text="Communication Skills" />
+      <BodySubtitle text="Communication Skills" className="Communication" />
     </Stack>
   );
 }

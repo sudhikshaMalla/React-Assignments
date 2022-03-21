@@ -7,7 +7,7 @@ export default function History() {
   return (
     <Stack direction="row" spacing={1}>
       <TempleBuddhistOutlinedIcon className="HistoryIcon" />
-      <BodySubtitle text="History" />
+      <BodySubtitle text="History" className="History" />
     </Stack>
   );
 }

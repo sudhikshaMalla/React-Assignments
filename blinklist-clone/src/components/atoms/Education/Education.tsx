@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <Stack direction="row" spacing={1}>
       <SchoolOutlinedIcon className="EducationIcon" />
-      <BodySubtitle text="Education" />
+      <BodySubtitle text="Education" className="Education" />
     </Stack>
   );
 }

@@ -7,7 +7,7 @@ export default function Science() {
   return (
     <Stack direction="row" spacing={1}>
       <ScienceOutlinedIcon className="ScienceIcon" />
-      <BodySubtitle text="Science" />
+      <BodySubtitle text="Science" className="Science" />
     </Stack>
   );
 }

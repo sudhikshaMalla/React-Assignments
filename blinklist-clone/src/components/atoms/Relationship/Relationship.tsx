@@ -7,7 +7,7 @@ export default function Relationship() {
   return (
     <Stack direction="row" spacing={1}>
       <FavoriteBorderOutlinedIcon className="RelationshipIcon" />
-      <BodySubtitle text="Sex & Relationship" />
+      <BodySubtitle text="Sex & Relationship" className="Relationship" />
     </Stack>
   );
 }

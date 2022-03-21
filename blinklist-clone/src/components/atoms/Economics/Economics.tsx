@@ -7,7 +7,7 @@ export default function Economics() {
   return (
     <Stack direction="row" spacing={1}>
       <PublicOutlinedIcon className="EconomicsIcon" />
-      <BodySubtitle text="Economics" />
+      <BodySubtitle text="Economics" className="Economics" />
     </Stack>
   );
 }

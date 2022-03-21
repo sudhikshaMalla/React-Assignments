@@ -7,7 +7,10 @@ export default function Entrepreneurship() {
   return (
     <Stack direction="row" spacing={1}>
       <EqualizerOutlinedIcon className="PersonalDevelopmentIcon" />
-      <BodySubtitle text="Personal Development" />
+      <BodySubtitle
+        text="Personal Development"
+        className="PersonalDevelopment"
+      />
     </Stack>
   );
 }

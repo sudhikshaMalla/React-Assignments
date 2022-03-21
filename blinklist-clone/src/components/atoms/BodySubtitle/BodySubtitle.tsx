@@ -4,6 +4,7 @@ import { BodyTheme } from "../../../themes";
 
 type BodySubtitleProps = {
   text: string;
+  className: string;
 };
 
 export default function BodySubtitle(props: BodySubtitleProps) {

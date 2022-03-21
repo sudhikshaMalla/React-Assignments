@@ -7,7 +7,7 @@ export default function Entrepreneurship() {
   return (
     <Stack direction="row" spacing={1}>
       <AddAlertOutlinedIcon className="AlertIcon" />
-      <BodySubtitle text="Entrepreneurship" />
+      <BodySubtitle text="Entrepreneurship" className="Enterpreneurship" />
     </Stack>
   );
 }

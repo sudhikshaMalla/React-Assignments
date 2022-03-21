@@ -7,7 +7,7 @@ export default function Health() {
   return (
     <Stack direction="row" spacing={1}>
       <LocalHospitalOutlinedIcon className="HealthIcon" />
-      <BodySubtitle text="Health & Nutrition" />
+      <BodySubtitle text="Health & Nutrition" className="Health" />
     </Stack>
   );
 }

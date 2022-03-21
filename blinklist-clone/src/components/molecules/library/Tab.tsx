@@ -25,7 +25,7 @@ export default function Tab(props: TabProps) {
         color: textColor,
       }}
     >
-      <BodySubtitle text={props.text} />
+      <BodySubtitle text={props.text} className="Tab" />
     </div>
   );
 }

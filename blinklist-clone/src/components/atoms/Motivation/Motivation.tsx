@@ -7,7 +7,7 @@ export default function Entrepreneurship() {
   return (
     <Stack direction="row" spacing={1}>
       <LightbulbOutlinedIcon className="MotivationIcon" />
-      <BodySubtitle text="Motivation & Inspiration" />
+      <BodySubtitle text="Motivation & Inspiration" className="Motivatuon" />
     </Stack>
   );
 }
