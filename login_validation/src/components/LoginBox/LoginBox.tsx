@@ -1,8 +1,8 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import { PasswordField } from "./PasswordField";
-import { SubmitField } from "./SubmitField";
-import { UsernameField } from "./UsernameField";
+import { PasswordField } from "../PasswordField/PasswordField";
+import { SubmitField } from "../SubmitField/SubmitField";
+import { UsernameField } from "../UsernameField/UsernameField";
 
 type LoginBoxProps = {
   AccountCredentials: {
@@ -87,7 +87,7 @@ export class LoginBox extends React.Component<LoginBoxProps, StateProps> {
         <br></br>
         <SubmitField handleClick={this.handleClick} />
         <p>
-          <i>{this.state.message}</i>
+          <i role="contentinfo">{this.state.message}</i>
         </p>
       </Container>
     );

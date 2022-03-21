@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { LoginBox } from "./LoginBox";
+import { LoginBox } from "./components/LoginBox/LoginBox";
 
 function App() {
   const credentials = [
