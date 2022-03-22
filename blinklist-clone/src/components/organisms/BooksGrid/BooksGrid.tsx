@@ -14,6 +14,9 @@ type booktype = {
   trending: boolean;
   latest: boolean;
   audio: boolean;
+  synopsis: string;
+  for: string;
+  aboutAuthor: string;
 };
 
 type BooksGridProps = {
