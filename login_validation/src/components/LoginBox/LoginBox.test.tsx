@@ -17,14 +17,14 @@ describe("Login Box tests", () => {
     },
   ];
   test("Before Click", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const containerElement = screen.getByRole("contentinfo");
     expect(containerElement).toHaveTextContent(
       "Enter your Credentials and click on submit"
     );
   });
   test("Empty Username and Password", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const buttonElement = screen.getByText("Submit");
     fireEvent.click(buttonElement);
     const containerElement = screen.getByRole("contentinfo");
@@ -33,7 +33,7 @@ describe("Login Box tests", () => {
     );
   });
   test("Empty Username", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const PasswordField = screen.getByPlaceholderText("Password");
     fireEvent.change(PasswordField, { target: { value: "12345" } });
     const containerElement = screen.getByRole("contentinfo");
@@ -42,7 +42,7 @@ describe("Login Box tests", () => {
     );
   });
   test("Submit Empty Username", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const PasswordField = screen.getByPlaceholderText("Password");
     fireEvent.change(PasswordField, { target: { value: "12345" } });
     const buttonElement = screen.getByText("Submit");
@@ -53,7 +53,7 @@ describe("Login Box tests", () => {
     );
   });
   test("Empty Password", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const UsernameField = screen.getByPlaceholderText("Username");
     fireEvent.change(UsernameField, { target: { value: "sudhikshaMalla" } });
     const containerElement = screen.getByRole("contentinfo");
@@ -62,7 +62,7 @@ describe("Login Box tests", () => {
     );
   });
   test("Submit Empty Password", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const UsernameField = screen.getByPlaceholderText("Username");
     fireEvent.change(UsernameField, { target: { value: "sudhikshaMalla" } });
     const buttonElement = screen.getByText("Submit");
@@ -73,7 +73,7 @@ describe("Login Box tests", () => {
     );
   });
   test("Filled Credentials", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const UsernameField = screen.getByPlaceholderText("Username");
     fireEvent.change(UsernameField, { target: { value: "sudhi7" } });
     const PasswordField = screen.getByPlaceholderText("Password");
@@ -84,7 +84,7 @@ describe("Login Box tests", () => {
     );
   });
   test("Valid Credentials", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const UsernameField = screen.getByPlaceholderText("Username");
     fireEvent.change(UsernameField, { target: { value: "sudhi7" } });
     const PasswordField = screen.getByPlaceholderText("Password");
@@ -95,7 +95,7 @@ describe("Login Box tests", () => {
     expect(containerElement).toHaveTextContent("Valid Credentials");
   });
   test("Invalid Credentials", () => {
-    render(<LoginBox AccountCredentials={credentials} />);
+    render(<LoginBox AccountCredentials={credentials} variant="primary" />);
     const UsernameField = screen.getByPlaceholderText("Username");
     fireEvent.change(UsernameField, { target: { value: "sudhikshamalla28" } });
     const PasswordField = screen.getByPlaceholderText("Password");

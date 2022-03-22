@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <LoginBox AccountCredentials={credentials} />
+      <LoginBox AccountCredentials={credentials} variant="secondary" />
     </div>
   );
 }

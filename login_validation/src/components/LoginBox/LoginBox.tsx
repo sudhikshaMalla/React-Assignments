@@ -9,6 +9,7 @@ type LoginBoxProps = {
     username: string;
     password: string;
   }[];
+  variant: "primary" | "secondary";
 };
 
 type StateProps = {
@@ -78,16 +79,25 @@ export class LoginBox extends React.Component<LoginBoxProps, StateProps> {
         <UsernameField
           value={username}
           handleChange={this.handleUsernameChange}
+          variant={this.props.variant}
         />
         <br></br>
         <PasswordField
+          variant={this.props.variant}
           value={password}
           handleChange={this.handlePasswordChange}
         />
         <br></br>
-        <SubmitField handleClick={this.handleClick} />
+        <SubmitField
+          variant={this.props.variant}
+          handleClick={this.handleClick}
+        />
         <p>
-          <i role="contentinfo">{this.state.message}</i>
+          {this.props.variant === "primary" ? (
+            <b role="contentinfo">{this.state.message}</b>
+          ) : (
+            <i role="contentinfo">{this.state.message}</i>
+          )}
         </p>
       </Container>
     );
