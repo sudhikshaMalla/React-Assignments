@@ -1,10 +1,31 @@
 import { Explore } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
+import { Dispatch, SetStateAction } from "react";
 import Banner from "../../molecules/Banner/Banner";
 import DefaultBooks from "../../molecules/DefaultBooks/DefaultBooks";
 import SearchBar from "../../molecules/SearchBar/SearchBar";
 
-export default function Entrepreneurship() {
+type booktype = {
+  id: number;
+  title: string;
+  subtitle: string;
+  author: string;
+  time: number;
+  reads: string;
+  status: string;
+  trending: boolean;
+  latest: boolean;
+  audio: boolean;
+  synopsis: string;
+  for: string;
+  aboutAuthor: string;
+};
+
+type EntrepreneurshipProps = {
+  setBookFunction: Dispatch<SetStateAction<booktype>>;
+};
+
+export default function Entrepreneurship(props: EntrepreneurshipProps) {
   return (
     <Stack
       direction="column"
@@ -19,7 +40,7 @@ export default function Entrepreneurship() {
     >
       <Banner />
       <SearchBar />
-      <DefaultBooks />
+      <DefaultBooks setBookFunction={props.setBookFunction} />
     </Stack>
   );
 }

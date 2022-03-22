@@ -5,6 +5,7 @@ import API from "../../../api";
 
 type FinishedProps = {
   val: booktype;
+  usage: "details" | "detailsPage";
 };
 
 type booktype = {
@@ -32,20 +33,26 @@ export default function Finished(props: FinishedProps) {
       justifyContent="center"
       spacing={2}
       sx={{
-        width: "330px",
-        backgroundColor: "white",
-        color: COLORS.BRIGHT_BLUE,
-        border: "1px solid " + COLORS.SHADOW_GREY,
+        width: props.usage === "details" ? "330px" : "200px",
+        backgroundColor:
+          props.usage === "details" ? "white" : COLORS.BRIGHT_GREEN,
+        color:
+          props.usage === "details" ? COLORS.BRIGHT_BLUE : COLORS.DARK_BLUE,
+        border:
+          props.usage === "details" ? "1px solid " + COLORS.SHADOW_GREY : "",
         paddingTop: "10px",
         paddingBottom: "10px",
         "&:hover": {
-          backgroundColor: COLORS.BRIGHT_BLUE,
-          color: "white",
+          backgroundColor:
+            props.usage === "details" ? COLORS.BRIGHT_BLUE : COLORS.DULL_GREEN,
+          color: props.usage === "details" ? "white" : "",
         },
       }}
       onClick={handleClick}
     >
-      <CardBody1 name="Finished" />
+      <CardBody1
+        name={props.usage === "details" ? "Finished" : "Finished Reading"}
+      />
     </Stack>
   );
 }

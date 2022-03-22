@@ -3,10 +3,11 @@
     {
       "id": 1,
       "title": "Bring Your Human to Work",
+      "subtitle": "10 Surefire Ways to Design a Workplace That Is Good for People, Great for Business, and Just Might Change the World",
       "author": "Erica Keswin",
       "time": 13,
       "reads": "1.9k",
-      "status": "reading",
+      "status": "finished",
       "trending": false,
       "latest": false,
       "audio": true,
@@ -17,6 +18,7 @@
     {
       "id": 2,
       "title": "Employee to Entrepreneur",
+      "subtitle": "How to Earn Your Freedom and Do Work that Matters",
       "author": "Steve Glaveski",
       "time": 15,
       "reads": "",
@@ -31,6 +33,7 @@
     {
       "id": 3,
       "title": "Doesn’t Hurt to Ask",
+      "subtitle": "Using the Power of Questions to Communicate, Connect, and Persuade",
       "author": "Trey Gowdy",
       "time": 13,
       "reads": "1.9k",
@@ -46,6 +49,7 @@
       "id": 4,
       "title": "The Fate of Food",
       "author": "Amanda Little",
+      "subtitle": "What We'll Eat in a Bigger, Hotter, Smarter World",
       "time": 12,
       "reads": "16k",
       "status": "finished",
@@ -59,6 +63,7 @@
     {
       "id": 5,
       "title": "Lives of the Stoics",
+      "subtitle": "The Art of Living from Zeno to Marcus Aurelius",
       "author": "Ryan Holiday, Stephen Hansel",
       "time": 13,
       "reads": "",
@@ -73,6 +78,7 @@
     {
       "id": 6,
       "title": "Loving Your Business",
+      "subtitle": "Rethink Your Relationship with Your Company and Make it Work for You",
       "author": "Debbie King",
       "time": 13,
       "reads": "",
@@ -87,6 +93,7 @@
     {
       "title": "The Lonely Century",
       "author": "Noreena Hertz",
+      "subtitle": "A Call to Reconnect",
       "time": 15,
       "reads": "",
       "status": "finished",
@@ -100,6 +107,7 @@
     },
     {
       "title": "Eat Better, Feel Better",
+      "subtitle": "My Recipes for Wellness and Healing, Inside and Out ",
       "author": "Giada De Laurentiis",
       "time": 13,
       "reads": "1.9k",
@@ -116,6 +124,7 @@
       "id": 9,
       "title": "Dropshipping",
       "author": "James Moore",
+      "subtitle": "How to Make Money Online and Build Your Own Online Business ",
       "time": 12,
       "reads": "",
       "status": "finished",
@@ -129,6 +138,7 @@
     {
       "id": 10,
       "title": "Being Boss",
+      "subtitle": "Take Control of Your Work and Live Life on Your Own Terms",
       "author": "Kathleen Shannon and Emily...",
       "time": 13,
       "reads": "",
@@ -143,6 +153,7 @@
     {
       "id": 11,
       "title": "Beyond Entrepreneurship 2.0",
+      "subtitle": "Turning Your Business into an Enduring Great Company",
       "author": "Jim Collins & Bill Lazier",
       "time": 13,
       "reads": "1.9k",

@@ -2,9 +2,27 @@ import { Stack } from "@mui/material";
 import { COLORS } from "../../../constants";
 import BooksGrid from "../BooksGrid/BooksGrid";
 import TabMenu from "../../molecules/library/TabMenu";
+import { Dispatch, SetStateAction } from "react";
+
+type booktype = {
+  id: number;
+  title: string;
+  subtitle: string;
+  author: string;
+  time: number;
+  reads: string;
+  status: string;
+  trending: boolean;
+  latest: boolean;
+  audio: boolean;
+  synopsis: string;
+  for: string;
+  aboutAuthor: string;
+};
 
 type LibraryCardsProps = {
   tab: string;
+  setBookFunction: Dispatch<SetStateAction<booktype>>;
 };
 
 export default function LibraryCards(props: LibraryCardsProps) {
@@ -24,7 +42,7 @@ export default function LibraryCards(props: LibraryCardsProps) {
       }}
     >
       <TabMenu tab={tabName} />
-      <BooksGrid property={status} />
+      <BooksGrid property={status} setBookFunction={props.setBookFunction} />
     </Stack>
   );
 }

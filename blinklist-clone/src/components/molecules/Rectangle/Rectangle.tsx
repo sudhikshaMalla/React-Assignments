@@ -42,14 +42,14 @@ export default function Rectangle(props: RectangleProps) {
         spacing={0}
         sx={{ width: "330px" }}
       >
-        <Finished val={props.val} />
+        <Finished val={props.val} usage="details" />
         <ProgressInComplete className="ProgressInComplete" />
       </Stack>
     );
   }
   return (
     <Stack direction="column" spacing={0} sx={{ width: "330px" }}>
-      <ReadAgain val={props.val} />
+      <ReadAgain val={props.val} usage="details" />
       <ProgressComplete />
     </Stack>
   );

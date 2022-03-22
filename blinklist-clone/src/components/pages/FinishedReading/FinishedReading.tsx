@@ -1,9 +1,30 @@
 import Stack from "@mui/material/Stack";
+import { Dispatch, SetStateAction } from "react";
 import { COLORS } from "../../../constants";
 import BodyHeading from "../../atoms/BodyHeading/BodyHeading";
 import LibraryCards from "../../organisms/LibraryCards/LibraryCards";
 
-export default function FinishedReading() {
+type booktype = {
+  id: number;
+  title: string;
+  subtitle: string;
+  author: string;
+  time: number;
+  reads: string;
+  status: string;
+  trending: boolean;
+  latest: boolean;
+  audio: boolean;
+  synopsis: string;
+  for: string;
+  aboutAuthor: string;
+};
+
+type FinishedReadingProps = {
+  setBookFunction: Dispatch<SetStateAction<booktype>>;
+};
+
+export default function FinishedReading(props: FinishedReadingProps) {
   return (
     <Stack
       direction="column"
@@ -18,7 +39,7 @@ export default function FinishedReading() {
       }}
     >
       <BodyHeading text="My Library" />
-      <LibraryCards tab="finished" />
+      <LibraryCards tab="finished" setBookFunction={props.setBookFunction} />
     </Stack>
   );
 }

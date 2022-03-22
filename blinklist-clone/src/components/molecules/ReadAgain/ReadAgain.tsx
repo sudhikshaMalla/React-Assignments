@@ -5,6 +5,7 @@ import API from "../../../api";
 
 type ReadAgainProps = {
   val: booktype;
+  usage: "details" | "detailsPage";
 };
 
 type booktype = {
@@ -32,20 +33,24 @@ export default function ReadAgain(props: ReadAgainProps) {
       justifyContent="center"
       spacing={2}
       sx={{
-        width: "330px",
+        width: props.usage === "details" ? "330px" : "200px",
         backgroundColor: "white",
-        color: COLORS.BRIGHT_BLUE,
-        border: "1px solid " + COLORS.SHADOW_GREY,
+        color: props.usage === "details" ? COLORS.BRIGHT_BLUE : COLORS.GREEN,
+        border:
+          props.usage === "details"
+            ? "1px solid " + COLORS.SHADOW_GREY
+            : "1px solid " + COLORS.DARK_BLUE,
         paddingTop: "10px",
         paddingBottom: "10px",
         "&:hover": {
-          backgroundColor: COLORS.BRIGHT_BLUE,
-          color: "white",
+          backgroundColor:
+            props.usage === "details" ? COLORS.BRIGHT_BLUE : COLORS.GREEN,
+          color: props.usage === "details" ? "white" : COLORS.DARK_BLUE,
         },
       }}
       onClick={handleClick}
     >
-      <CardBody name="Read Again" />
+      <CardBody name={props.usage === "details" ? "Read Again" : "Read now"} />
     </Stack>
   );
 }

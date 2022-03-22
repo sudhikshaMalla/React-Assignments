@@ -11,4 +11,5 @@ export const COLORS = {
   GRAY: "#E1ECFC",
   GREEN: "#22C870",
   BRIGHT_GREEN: "#2CE080",
+  DULL_GREEN: "#00C263",
 };

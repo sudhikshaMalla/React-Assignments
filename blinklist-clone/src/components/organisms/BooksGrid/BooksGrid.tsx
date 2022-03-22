@@ -1,12 +1,14 @@
 import Grid from "@mui/material/Grid";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import API from "../../../api";
 import BookCard from "../../molecules/BookCard/BookCard";
 
 type booktype = {
   id: number;
   title: string;
+  subtitle: string;
   author: string;
   time: number;
   reads: string;
@@ -21,6 +23,7 @@ type booktype = {
 
 type BooksGridProps = {
   property: string;
+  setBookFunction: Dispatch<SetStateAction<booktype>>;
 };
 
 export default function BooksGrid(props: BooksGridProps) {
@@ -50,9 +53,18 @@ export default function BooksGrid(props: BooksGridProps) {
             (props.property === "reading" && book.status === "reading") ||
             (props.property === "read" && book.status === "finished")
           ) {
+            const handleClick = () => {
+              props.setBookFunction(book);
+            };
             return (
               <Grid key={book.id} item>
-                <BookCard val={book} />
+                <Link
+                  to="/book"
+                  style={{ textDecoration: "none" }}
+                  onClick={handleClick}
+                >
+                  <BookCard val={book} />
+                </Link>
               </Grid>
             );
           }
