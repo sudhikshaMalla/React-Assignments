@@ -6,6 +6,7 @@ import ReadAgain from "../ReadAgain/ReadAgain";
 import { Link } from "react-router-dom";
 import Finished from "../Finished/Finished";
 import ProgressZero from "../../atoms/ProgressZero/ProgressZero";
+import "./Rectangle.css";
 
 type RectangleProps = {
   val: booktype;
@@ -38,7 +39,7 @@ export default function Rectangle(props: RectangleProps) {
     return (
       <Stack
         direction="column"
-        alignItems="flex-end"
+        // alignItems="flex-end"
         spacing={0}
         sx={{ width: "330px" }}
       >

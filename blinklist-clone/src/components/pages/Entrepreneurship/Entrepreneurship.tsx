@@ -1,4 +1,3 @@
-import { Explore } from "@mui/icons-material";
 import Stack from "@mui/material/Stack";
 import { Dispatch, SetStateAction } from "react";
 import Banner from "../../molecules/Banner/Banner";

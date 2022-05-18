@@ -23,7 +23,7 @@ export default function AddToLibrary(props: AddToLibraryProps) {
   const handleClick = async (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
     const book = props.val;
-    book["status"] = "finished";
+    book["status"] = "reading";
     API.put("http://localhost:3333/books/" + book.id.toString() + "/", book);
   };
 

@@ -46,14 +46,50 @@ export default function BookDetailPage(props: BookDetailPageProps) {
 
   const handle0Click = () => {
     setContent(0);
+    const sbox = document.getElementById("synopsis");
+    if (sbox != null) {
+      sbox.style.borderBottom = "2px solid " + COLORS.BRIGHT_GREEN;
+    }
+    const fbox = document.getElementById("for");
+    if (fbox != null) {
+      fbox.style.borderBottom = "2px solid " + COLORS.GRAY;
+    }
+    const abox = document.getElementById("about");
+    if (abox != null) {
+      abox.style.borderBottom = "2px solid " + COLORS.GRAY;
+    }
   };
 
   const handle1Click = () => {
     setContent(1);
+    const sbox = document.getElementById("synopsis");
+    if (sbox != null) {
+      sbox.style.borderBottom = "2px solid " + COLORS.GRAY;
+    }
+    const fbox = document.getElementById("for");
+    if (fbox != null) {
+      fbox.style.borderBottom = "2px solid " + COLORS.BRIGHT_GREEN;
+    }
+    const abox = document.getElementById("about");
+    if (abox != null) {
+      abox.style.borderBottom = "2px solid " + COLORS.GRAY;
+    }
   };
 
   const handle2Click = () => {
     setContent(2);
+    const sbox = document.getElementById("synopsis");
+    if (sbox != null) {
+      sbox.style.borderBottom = "2px solid " + COLORS.GRAY;
+    }
+    const fbox = document.getElementById("for");
+    if (fbox != null) {
+      fbox.style.borderBottom = "2px solid " + COLORS.GRAY;
+    }
+    const abox = document.getElementById("about");
+    if (abox != null) {
+      abox.style.borderBottom = "2px solid " + COLORS.BRIGHT_GREEN;
+    }
   };
 
   return (
@@ -99,12 +135,13 @@ export default function BookDetailPage(props: BookDetailPageProps) {
             to="/book"
             style={{
               textDecoration: "none",
-              borderBottom: "2px solid " + COLORS.GRAY,
+              borderBottom: "2px solid " + COLORS.BRIGHT_GREEN,
               width: "33%",
               padding: "5px",
             }}
             onClick={handle0Click}
             className="tabElement"
+            id="synopsis"
           >
             <Body2Text text="Synopsis" color={COLORS.GREY} />
           </Link>
@@ -118,6 +155,7 @@ export default function BookDetailPage(props: BookDetailPageProps) {
             }}
             onClick={handle1Click}
             className="tabElement"
+            id="for"
           >
             <Body2Text text="Who is it for?" color={COLORS.GREY} />
           </Link>
@@ -131,6 +169,7 @@ export default function BookDetailPage(props: BookDetailPageProps) {
             }}
             onClick={handle2Click}
             className="tabElement"
+            id="about"
           >
             <Body2Text text="About the author" color={COLORS.GREY} />
           </Link>
