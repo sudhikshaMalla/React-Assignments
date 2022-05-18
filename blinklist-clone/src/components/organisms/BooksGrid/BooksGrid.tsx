@@ -67,6 +67,8 @@ export default function BooksGrid(props: BooksGridProps) {
                 </Link>
               </Grid>
             );
+          } else {
+            return <></>;
           }
         })}
     </Grid>

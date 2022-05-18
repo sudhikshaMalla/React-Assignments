@@ -7,8 +7,8 @@ type ProgressInCompleteProps = {
 
 export default function ProgressInComplete(props: ProgressInCompleteProps) {
   return (
-    <Box className="outer">
-      <Box className="inner"></Box>
+    <Box className="ProgressBar">
+      <Box className="inner" />
     </Box>
   );
 }
