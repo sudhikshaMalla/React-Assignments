@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha ./dist/test/book.test.js --timeout 5000",
+    "test": "mocha ./dist/test/ ",
     "start": "nodemon dist/app.js"
   },
   "author": "Sudhiksha Malla",
