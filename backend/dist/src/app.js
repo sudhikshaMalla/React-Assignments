@@ -24,6 +24,6 @@ app.use((error, req, res, next) => {
 mongoose_1.default
     .connect("mongodb+srv://sudhikshaMalla:kFZU3Ms6057ulj0G@cluster-udemycoursenode.aoytij3.mongodb.net/blinkist?retryWrites=true&w=majority")
     .then((result) => {
-    app.listen(8888);
+    app.listen(8080);
 })
     .catch((err) => console.log(err));
