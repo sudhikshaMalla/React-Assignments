@@ -13,6 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const chai_1 = require("chai");
+const sinon_1 = __importDefault(require("sinon"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const book_1 = __importDefault(require("../src/models/book"));
 const book_2 = require("../src/controllers/book");
@@ -24,15 +25,15 @@ describe("Book Controller", function () {
             done();
         });
     });
-    // it("should throw an error with code 500 if accessing database fails", function (done) {
-    //   sinon.stub(Book, "find").throws();
-    //   getBooks({}, {}, () => {}).then((result: ErrorType) => {
-    //     expect(result).to.be.an("error");
-    //     expect(result).to.have.property("statusCode", 500);
-    //     done();
-    //   });
-    //   sinon.restore();
-    // });
+    it("should throw an error with code 500 if accessing database fails", function (done) {
+        sinon_1.default.stub(book_1.default, "find").throws();
+        (0, book_2.getBooks)({}, {}, () => { }).then((result) => {
+            (0, chai_1.expect)(result).to.be.an("error");
+            (0, chai_1.expect)(result).to.have.property("statusCode", 500);
+            done();
+        });
+        sinon_1.default.restore();
+    });
     it("should send a response with books that exist in database", (done) => {
         const book = new book_1.default({
             _id: 1,
