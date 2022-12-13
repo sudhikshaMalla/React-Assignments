@@ -4,10 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "nyc --reporter lcov --reporter text --report-dir .nyc_coverage report",
+    "test": "nyc mocha --require ts-node/register test/*.test.ts --timeout 10000",
     "start": "nodemon dist/app.js",
-    "test-with-coverage": "nyc mocha --require ts-node/register test/*.test.ts --timeout 10000",
-    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm run test-with-coverage"
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "author": "Sudhiksha Malla",
   "license": "ISC",
